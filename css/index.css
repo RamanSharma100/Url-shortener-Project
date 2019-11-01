@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.main {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: #fafafa;
+}
+
+.main .navigation-bar {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: #2c3e50;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.main .navigation-bar .logo-link span {
+    color: #ff0;
+}
+
+.main .navigation-bar .logo-link .logos {
+    background: #fff;
+    color: #2c3e50;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 5px 7px;
+    margin: 0 2px;
+}
+
+.main .navigation-bar .logo {
+    position: relative;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .navigation-bar .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 750;
+}
+
+.main .navigation-bar .Login-out {
+    position: relative;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main .navigation-bar .Login-out .status-user {
+    position: relative;
+    height: auto;
+    width: auto;
+    font-size: 1.4em;
+    font-weight: 550;
+    font-family: sans-serif;
+}
+
+.main .navigation-bar .Login-out .status-user span {
+    color: #ff0;
+    margin: 0 5px 0 2px;
+}
+
+.main .navigation-bar .Login-out a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.main .navigation-bar .Login-out a:nth-child(1) {
+    margin-left: 15px;
+}
+
+
+/* banner */
+
+.main .banner {
+    position: relative;
+    background: #ebe9e9;
+}
+
+.main .banner img {
+    position: absolute;
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.main .banner .info {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .banner .info .heading {
+    position: relative;
+    margin-top: 5%;
+    font-size: 4em;
+    font-weight: 800;
+    color: #ff0;
+    z-index: 1;
+    letter-spacing: 5px;
+    text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main .banner .info .heading::before {
+    position: absolute;
+    content: 'SHORT LINKER';
+    top: -0px;
+    left: -5px;
+    color: #fff;
+    z-index: 0;
+}
+
+.main .banner .info .sub-heading {
+    position: relative;
+    margin-top: 0.5%;
+    font-size: 2.2em;
+    font-weight: 550;
+    color: rgba(207, 207, 206, 0.945);
+    z-index: 1;
+    letter-spacing: 5px;
+    text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main .banner .info form {
+    position: relative;
+    margin-top: 50px;
+    height: auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid #2c3e50c0;
+    box-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main .banner .info form input[type='text'] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border: none;
+    height: 40px;
+    outline: none;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.main .banner .info form input[type='submit'] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    border: none;
+    height: 100%;
+    outline: none;
+    font-size: 1.2em;
+    width: auto;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #2c3e50;
+    background: #cdf00b;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
+.main .banner .info form input[type='submit']:hover {
+    background: #c0e00b;
+}
+
+.main .banner .info .shortlink {
+    color: #2c3e50;
+    margin-top: 5%;
+    text-align: center;
+    display: none;
+}
+
+.main .banner .info .shortlink .short-link-heading {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+
+/* expample */
+
+.example {
+    position: relative;
+    color: #000;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.example .example-heading {
+    color: #2c3e50;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.example .example-sub-heading {
+    color: #000;
+    font-size: 1.8em;
+    font-weight: 650;
+    margin: 0.5% 0;
+}
+
+.example .link-example {
+    font-size: 0.99em;
+    color: #666;
+    margin-bottom: 2%;
+    width:60%;
+}
+
+
+/* footer */
+
+.footer {
+    position: relative;
+    margin-top: 60%;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.89em;
+    font-weight: 500;
+    color: #444;
+    letter-spacing: 0.5px;
+}
+
+.footer span {
+    color: #000;
+}
+
+.footer a {
+    color: #444;
+}
+
+.footer .footer-sub {
+    position: relative;
+    margin: 0.5% 0;
+    color: #666;
+    font-size: 0.79em;
+}
